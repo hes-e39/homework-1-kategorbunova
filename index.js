@@ -15,7 +15,7 @@ const COLORS = 'https://nt-cdn.s3.amazonaws.com/colors.json';
 const fetchColors = ({ name, hex, compName, compHex }) => 
   
   {
-   fetch(COLORS)
+   return fetch(COLORS)
 
     .then((response) => {
       if (!response.ok) {
